@@ -1,4 +1,5 @@
 .DS_Store
+npm-debug.log
 .idea
 .vscode
 testing
@@ -16,8 +17,22 @@ cov-pt*
 *.gz
 **/test/output*
 **/test/temp
+test/temp
 .release.json
 package-lock.json
+yarn-error.log
 
 scripts/tsconfig.json
 packages/pug-error/lib
+babel-plugin-transform-react-beagle/flow-typed/babel-nodes.js
+/src/lib
+
+
+beagle-cli/pids
+beagle-cli/logs
+beagle-cli/results
+
+beagle-lexer/pids
+beagle-lexer/logs
+beagle-lexer/results
+

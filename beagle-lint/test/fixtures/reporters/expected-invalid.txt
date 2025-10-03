@@ -1,0 +1,6 @@
+%dirname%invalid.pug:1:5
+  > 1| div=#
+-----------^
+    2| 
+
+Syntax Error: Unexpected character '#'
