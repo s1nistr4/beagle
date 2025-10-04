@@ -9,17 +9,32 @@
   "preferGlobal": true,
   "keywords": [],
   "dependencies": {
-    "chalk": "^1.0.0",
-    "commander": "^2.8.1",
-    "pug": "^2.0.0-alpha7",
-    "mkdirp": "^0.5.1"
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-typescript": "^7.27.1",
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.5",
+    "@types/node": "^24.6.2",
+    "@types/pug": "^2.0.10",
+    "babel-preset-minify": "^0.5.2",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.1",
+    "mkdirp": "^3.0.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.3",
+    "terser": "^5.44.0",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "istanbul": "*",
     "mocha": "*",
-    "rimraf": "^2.3.4"
+    "rimraf": "^6.0.1"
   },
   "scripts": {
+    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files",
     "test": "mocha -R spec --bail",
     "precoverage": "rimraf coverage && rimraf cov-pt*",
     "coverage": "istanbul cover --report none --dir cov-pt0 node_modules/mocha/bin/_mocha -- -R dot",
