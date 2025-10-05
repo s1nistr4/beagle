@@ -1,5 +1,5 @@
 # Beagle
-**Beagle is a high-performance, high-productivity templating engine for Node.js.** It can be used both server side and with frontend frameworks like React, Angular, Vue, Svelte and others. It's an actively maintained fork of Beagle with a modernized codebase.
+**Beagle is a high-performance, high-productivity templating engine for Node.js.** It can be used both server side and with frontend frameworks like React, Angular, Vue, Svelte and others. It's an actively maintained fork of [Pug](https://github.com/pugjs/pug) with a modernized codebase.
 
 ## New Features (WIP)
 - In progress: The codebase has been ported over to TypeScript.
@@ -47,17 +47,17 @@ Beagle transforms the above to:
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>Pug</title>
+  <title>Beagle</title>
   <script type="text/javascript">
   if (foo) bar(1 + 5);
   </script>
  </head>
  <body>
-  <h1>Pug - node template engine</h1>
+  <h1>Beagle - node template engine</h1>
   <div id="container" class="col">
    <p>You are amazing</p>
    <p>
-    Pug is a terse and simple templating language with a strong focus on
+    Beagle is a terse and simple templating language with a strong focus on
     performance and powerful features.
    </p>
   </div>

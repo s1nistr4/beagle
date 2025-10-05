@@ -34,6 +34,7 @@ yarn-error.log
 
 # Only for things properly ported to TypeScript 
 # In the future this will be a simple *.js, but during the porting phase we have to do this one-by-one so important files don't get deleted 
+beagle-cli/src/index.js
+beagle-cli/src/test/index.js
 
-beagle-cli/index.js
-beagle-cli/test/index.js
+

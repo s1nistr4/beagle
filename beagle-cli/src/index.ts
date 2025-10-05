@@ -1,16 +1,21 @@
 import fs, { Stats } from "fs"
 import path from "path"
-import { program } from "commander"
+import { Command, OptionValues, program } from "commander"
 import { mkdirp } from "mkdirp"
 import chalk from "chalk"
 import pug from "pug"
 
+interface IOptions {
+ name?: string|{ (str: string): Command; (): string; }
+}
+
 const basename:(path: string, suffix?: string | undefined) => string = path.basename
-let dirname:(path: string) => string = path.dirname
-let resolve:(...paths: string[]) => string = path.resolve
-let normalize:(path: string) => string = path.normalize
-let relative = path.relative
-let options = {};
+const dirname:(path: string) => string = path.dirname
+const resolve:(...paths: string[]) => string = path.resolve
+const normalize:(path: string) => string = path.normalize
+const relative:(from: string, to: string) => string = path.relative
+
+let options:IOptions = {};
 
 program
   .version(
@@ -33,7 +38,8 @@ program
   .option('--doctype <str>', 'specify the doctype on the command line (useful if it is not specified by the template)')
 
 
-program.on('--help', function(){
+program.on('--help', function():void {
+  console.log(``)
   console.log('  Examples:');
   console.log('');
   console.log('    # Render all files in the `templates` directory:');
@@ -64,26 +70,22 @@ program.on('--help', function(){
 });
 
 program.parse(process.argv);
+const opts:OptionValues = program.opts()
 
-// options given, parse them
-
-if (program.obj) {
-  options = parseObj(program.obj);
+if (opts.obj) {
+ options = parseObj(opts.obj);
 }
 
-/**
- * Parse object either in `input` or in the file called `input`. The latter is
- * searched first.
- */
-function parseObj (input) {
+// Parse object either in `input` or in the file called `input`. The latter is searched first.
+function parseObj(input:string ):Record<string, any> {
   try {
     return require(path.resolve(input));
   } catch (e) {
-    var str;
+    let str:string = "";
     try {
-      str = fs.readFileSync(program.obj, 'utf8');
+      str = fs.readFileSync(input, 'utf8');
     } catch (e) {
-      str = program.obj;
+      str = input;
     }
     try {
       return JSON.parse(str);
@@ -112,22 +114,19 @@ if (typeof program.name === 'string') {
 
 // --silent
 
-var consoleLog = program.silent ? function() {} : console.log;
+let consoleLog = opts.silent ? function() {} : console.log;
 
 // left-over args are file paths
-
-var files = program.args;
+let files:string[] = program.args;
 
 // object of reverse dependencies of a watched file, including itself if
 // applicable
-
-var watchList = {};
+let watchList = {};
 
 // function for rendering
-var render = program.watch ? tryRender : renderFile;
+let render = opts.watch ? tryRender : renderFile;
 
 // compile files
-
 if (files.length) {
   consoleLog();
   if (program.watch) {
@@ -143,15 +142,12 @@ if (files.length) {
   stdin();
 }
 
-/**
- * Watch for changes on path
- *
- * Renders `base` if specified, otherwise renders `path`.
- */
+// Watch for changes on path
+// Renders `base` if specified, otherwise renders `path`.
 function watchFile(path, base, rootPath) {
   path = normalize(path);
+  let log:string = '  ' + chalk.gray('watching') + ' ' + chalk.cyan(path);
 
-  var log = '  ' + chalk.gray('watching') + ' ' + chalk.cyan(path);
   if (!base) {
     base = path;
   } else {
@@ -234,7 +230,7 @@ function renderFile(path:string, rootPath:string) {
     if (program.nameAfterFile) {
       options.name = getNameFromFileName(path);
     }
-    var fn = options.client
+    let fn = options.client
            ? pug.compileFileClient(path, options)
            : pug.compileFile(path, options);
     if (program.watch && fn.dependencies) {
@@ -245,7 +241,7 @@ function renderFile(path:string, rootPath:string) {
     }
 
     // --extension
-    var extname;
+    let extname;
     if (program.extension)   extname = '.' + program.extension;
     else if (options.client) extname = '.js';
     else if (program.extension === '') extname = '';
@@ -264,14 +260,14 @@ function renderFile(path:string, rootPath:string) {
       }
       path = resolve(program.out, path);
     }
-    var dir = resolve(dirname(path));
+    let dir:string = resolve(dirname(path));
     mkdirp.sync(dir);
-    var output = options.client ? fn : fn(options);
+    let output = options.client ? fn : fn(options);
     fs.writeFileSync(path, output);
     consoleLog('  ' + chalk.gray('rendered') + ' ' + chalk.cyan('%s'), normalize(path));
   // Found directory
   } else if (stat.isDirectory()) {
-    var files = fs.readdirSync(path);
+    let files:string[] = fs.readdirSync(path);
     files.map(function(filename) {
       return path + '/' + filename;
     }).forEach(function (file) {
