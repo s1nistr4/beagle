@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@font-face {
+ src: url("/inter.ttf");
+ font-family: "inter";
+}
+
+* { font-family: inter; color: white; }
+
+.inter { font-family: inter; }
+
+body {
+ background-color: #101010;
+}

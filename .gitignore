@@ -31,10 +31,12 @@ scripts/tsconfig.json
 test/temp
 testing
 yarn-error.log
+beagle-webclient/.svelte-kit
+beagle-webclient/build
+beagle-webclient/vite.config.js.timestamp-*
+beagle-webclient/vite.config.ts.timestamp-*
 
 # Only for things properly ported to TypeScript 
 # In the future this will be a simple *.js, but during the porting phase we have to do this one-by-one so important files don't get deleted 
 beagle-cli/src/index.js
 beagle-cli/src/test/index.js
-
-
