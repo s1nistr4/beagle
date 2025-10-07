@@ -1,0 +1,23 @@
+{
+  "name": "beagle-attrs",
+  "version": "2.0.4",
+  "description": "Generate code for Beagle attributes",
+  "keywords": [
+    "pug",
+    "beagle"
+  ],
+  "dependencies": {
+    "constantinople": "^4.0.1",
+    "js-stringify": "^1.0.2",
+    "beagle-runtime": "^2.0.5"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s1nistr4/beagle/tree/master/packages/beagle-attrs"
+  },
+  "author": "s1nistr4",
+  "license": "MIT"
+}

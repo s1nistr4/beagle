@@ -1,0 +1,34 @@
+{
+  "name": "beagle-runtime",
+  "version": "2.0.5",
+  "description": "The runtime components for the beagle templating language",
+  "keywords": [
+    "pug",
+    "beagle"
+  ],
+  "devDependencies": {
+    "uglify-js": "^2.6.1"
+  },
+  "files": [
+    "build.js",
+    "index.js",
+    "lib/dependencies.js",
+    "lib/internals.js",
+    "lib/sources.js",
+    "wrap.js"
+  ],
+  "scripts": {
+    "prepublish": "node prepublish",
+    "pretest": "npm run prepublish",
+    "build": "node prepublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pugjs/pug/tree/master/packages/beagle-runtime"
+  },
+  "browser": {
+    "fs": false
+  },
+  "author": "s1nistr4",
+  "license": "MIT"
+}

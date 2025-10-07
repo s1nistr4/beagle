@@ -1,10 +1,10 @@
 {
-  "name": "pug-cli",
-  "version": "1.0.0-alpha6",
-  "description": "Pug's CLI interface",
+  "name": "beagle-cli",
+  "version": "2.0.0",
+  "description": "Beagle's CLI interface",
   "bin": {
-    "pug": "./index.js",
-    "pug-cli": "./index.js"
+    "pug": "index.js",
+    "beagle-cli": "index.js"
   },
   "preferGlobal": true,
   "keywords": [],
@@ -18,13 +18,13 @@
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
     "@types/node": "^24.6.2",
-    "@types/pug": "^2.0.10",
+    "@types/beagle": "^2.0.10",
     "babel-preset-minify": "^0.5.2",
     "chalk": "^5.6.2",
     "commander": "^14.0.1",
     "mkdirp": "^3.0.1",
     "path": "^0.12.7",
-    "pug": "^3.0.3",
+    "beagle": "^3.0.3",
     "terser": "^5.44.0",
     "typescript": "^5.9.3"
   },
@@ -42,12 +42,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pugjs/pug-cli.git"
+    "url": "git+https://github.com/s1nistr4/beagle.git"
   },
-  "author": "TJ Holowaychuk <tj@vision-media.ca>",
-  "maintainers": [
-    "Timothy Gu <timothygu99@gmail.com>",
-    "Forbes Lindesay <forbes@lindesay.co.uk>"
-  ],
+  "author": "s1nistr4 <s1nistr4@proton.me>",
   "license": "MIT"
 }

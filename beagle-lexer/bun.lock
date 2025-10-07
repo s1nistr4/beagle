@@ -2,11 +2,11 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "pug-lexer",
+      "name": "beagle-lexer",
       "dependencies": {
         "character-parser": "^4.0.0",
         "is-expression": "^4.0.0",
-        "pug-error": "^2.1.0",
+        "beagle-error": "^2.1.0",
       },
       "devDependencies": {
         "acorn": "^8.15.0",
@@ -85,7 +85,7 @@
 
     "prelude-ls": ["prelude-ls@1.1.2", "", {}, "sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w=="],
 
-    "pug-error": ["pug-error@2.1.0", "", {}, "sha512-lv7sU9e5Jk8IeUheHata6/UThZ7RK2jnaaNztxfPYUY+VxZyk/ePVaNZ/vwmH8WqGvDz3LrNYt/+gA55NDg6Pg=="],
+    "beagle-error": ["beagle-error@2.1.0", "", {}, "sha512-lv7sU9e5Jk8IeUheHata6/UThZ7RK2jnaaNztxfPYUY+VxZyk/ePVaNZ/vwmH8WqGvDz3LrNYt/+gA55NDg6Pg=="],
 
     "resolve": ["resolve@1.1.7", "", {}, "sha512-9znBF0vBcaSN3W2j7wKvdERPwqTxSpCq+if5C0WoTCyV9n24rua28jeuQ2pL/HOf+yUe/Mef+H/5p60K0Id3bg=="],
 

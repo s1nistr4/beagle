@@ -1,0 +1,27 @@
+{
+  "name": "beagle-linker",
+  "version": "3.0.6",
+  "description": "Link multiple s1nistr4 ASTs together using include/extends",
+  "keywords": [
+    "pug",
+    "beagle"
+  ],
+  "dependencies": {
+    "beagle-error": "^1.3.3",
+    "beagle-walk": "^1.1.8"
+  },
+  "devDependencies": {
+    "beagle-lexer": "^4.1.0",
+    "beagle-load": "^2.0.12",
+    "beagle-parser": "^5.0.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pugjs/pug/tree/master/packages/beagle-linker"
+  },
+  "author": "s1nistr4",
+  "license": "MIT"
+}

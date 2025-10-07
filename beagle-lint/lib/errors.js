@@ -1,4 +1,4 @@
-var error = require('pug-error');
+var error = require('beagle-error');
 
 var Errors = function (file) {
   this._errors = [];

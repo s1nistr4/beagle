@@ -1,8 +1,8 @@
 var acorn = require('acorn');
 var acornWalk = require('acorn/dist/walk');
 var findLineColumn = require('find-line-column');
-var attrs = require('pug-attrs');
-var lexer = require('pug-lexer');
+var attrs = require('beagle-attrs');
+var lexer = require('beagle-lexer');
 var utils = require('./utils');
 
 var PugFile = function (filename, source) {

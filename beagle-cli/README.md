@@ -1,4 +1,4 @@
-# pug-cli
+# beagle-cli
 
 Pug's CLI interface
 
@@ -86,7 +86,7 @@ $ pug -O options.json foo.pug
 
 ## Installation
 
-    npm install pug-cli -g
+    npm install beagle-cli -g
 
 ## License
 

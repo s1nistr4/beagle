@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "pug-monorepo",
+      "name": "beagle-monorepo",
       "devDependencies": {
         "coveralls": "3.1.1",
         "jest": "^30.2.0",
@@ -15,14 +15,14 @@
       "name": "pug",
       "version": "2.0.4",
       "dependencies": {
-        "pug-code-gen": "^2.0.2",
-        "pug-filters": "^3.1.1",
-        "pug-lexer": "^4.1.0",
-        "pug-linker": "^3.0.6",
-        "pug-load": "^2.0.12",
-        "pug-parser": "^5.0.1",
-        "pug-runtime": "^2.0.5",
-        "pug-strip-comments": "^1.0.4",
+        "beagle-code-gen": "^2.0.2",
+        "beagle-filters": "^3.1.1",
+        "beagle-lexer": "^4.1.0",
+        "beagle-linker": "^3.0.6",
+        "beagle-load": "^2.0.12",
+        "beagle-parser": "^5.0.1",
+        "beagle-runtime": "^2.0.5",
+        "beagle-strip-comments": "^1.0.4",
       },
       "devDependencies": {
         "jstransformer-cdata": "^1.0.0",
@@ -37,41 +37,41 @@
         "uglify-js": "github:mishoo/UglifyJS2#1c15d0db456ce32f1b9b507aad97e5ee5c8285f7",
       },
     },
-    "packages/pug-attrs": {
-      "name": "pug-attrs",
+    "packages/beagle-attrs": {
+      "name": "beagle-attrs",
       "version": "2.0.4",
       "dependencies": {
         "constantinople": "^4.0.1",
         "js-stringify": "^1.0.2",
-        "pug-runtime": "^2.0.5",
+        "beagle-runtime": "^2.0.5",
       },
     },
-    "packages/pug-code-gen": {
-      "name": "pug-code-gen",
+    "packages/beagle-code-gen": {
+      "name": "beagle-code-gen",
       "version": "2.0.2",
       "dependencies": {
         "constantinople": "^4.0.1",
         "doctypes": "^1.1.0",
         "js-stringify": "^1.0.2",
-        "pug-attrs": "^2.0.4",
-        "pug-error": "^1.3.3",
-        "pug-runtime": "^2.0.5",
+        "beagle-attrs": "^2.0.4",
+        "beagle-error": "^1.3.3",
+        "beagle-runtime": "^2.0.5",
         "void-elements": "^3.1.0",
         "with": "^7.0.0",
       },
     },
-    "packages/pug-error": {
-      "name": "pug-error",
+    "packages/beagle-error": {
+      "name": "beagle-error",
       "version": "1.3.3",
     },
-    "packages/pug-filters": {
-      "name": "pug-filters",
+    "packages/beagle-filters": {
+      "name": "beagle-filters",
       "version": "3.1.1",
       "dependencies": {
         "constantinople": "^4.0.1",
         "jstransformer": "1.0.0",
-        "pug-error": "^1.3.3",
-        "pug-walk": "^1.1.8",
+        "beagle-error": "^1.3.3",
+        "beagle-walk": "^1.1.8",
         "resolve": "^1.15.1",
       },
       "devDependencies": {
@@ -81,80 +81,80 @@
         "jstransformer-markdown-it": "^2.0.0",
         "jstransformer-stylus": "^1.5.0",
         "jstransformer-uglify-js": "^1.2.0",
-        "pug-lexer": "^4.1.0",
-        "pug-load": "^2.0.12",
-        "pug-parser": "^5.0.1",
+        "beagle-lexer": "^4.1.0",
+        "beagle-load": "^2.0.12",
+        "beagle-parser": "^5.0.1",
       },
     },
-    "packages/pug-lexer": {
-      "name": "pug-lexer",
+    "packages/beagle-lexer": {
+      "name": "beagle-lexer",
       "version": "4.1.0",
       "dependencies": {
         "character-parser": "^4.0.0",
         "is-expression": "^4.0.0",
-        "pug-error": "^1.3.3",
+        "beagle-error": "^1.3.3",
       },
       "devDependencies": {
         "acorn": "^7.1.1",
         "acorn-walk": "^7.1.1",
       },
     },
-    "packages/pug-linker": {
-      "name": "pug-linker",
+    "packages/beagle-linker": {
+      "name": "beagle-linker",
       "version": "3.0.6",
       "dependencies": {
-        "pug-error": "^1.3.3",
-        "pug-walk": "^1.1.8",
+        "beagle-error": "^1.3.3",
+        "beagle-walk": "^1.1.8",
       },
       "devDependencies": {
-        "pug-lexer": "^4.1.0",
-        "pug-load": "^2.0.12",
-        "pug-parser": "^5.0.1",
+        "beagle-lexer": "^4.1.0",
+        "beagle-load": "^2.0.12",
+        "beagle-parser": "^5.0.1",
       },
     },
-    "packages/pug-load": {
-      "name": "pug-load",
+    "packages/beagle-load": {
+      "name": "beagle-load",
       "version": "2.0.12",
       "dependencies": {
         "object-assign": "^4.1.1",
-        "pug-walk": "^1.1.8",
+        "beagle-walk": "^1.1.8",
       },
       "devDependencies": {
-        "pug-lexer": "^4.1.0",
-        "pug-parser": "^5.0.1",
+        "beagle-lexer": "^4.1.0",
+        "beagle-parser": "^5.0.1",
       },
     },
-    "packages/pug-parser": {
-      "name": "pug-parser",
+    "packages/beagle-parser": {
+      "name": "beagle-parser",
       "version": "5.0.1",
       "dependencies": {
-        "pug-error": "^1.3.3",
+        "beagle-error": "^1.3.3",
         "token-stream": "1.0.0",
       },
     },
-    "packages/pug-runtime": {
-      "name": "pug-runtime",
+    "packages/beagle-runtime": {
+      "name": "beagle-runtime",
       "version": "2.0.5",
       "devDependencies": {
         "uglify-js": "^2.6.1",
       },
     },
-    "packages/pug-strip-comments": {
-      "name": "pug-strip-comments",
+    "packages/beagle-strip-comments": {
+      "name": "beagle-strip-comments",
       "version": "1.0.4",
       "dependencies": {
-        "pug-error": "^1.3.3",
+        "beagle-error": "^1.3.3",
       },
       "devDependencies": {
         "line-json": "^2.0.0",
       },
     },
-    "packages/pug-walk": {
-      "name": "pug-walk",
+    "packages/beagle-walk": {
+      "name": "beagle-walk",
       "version": "1.1.8",
       "devDependencies": {
-        "pug-lexer": "^4.1.0",
-        "pug-parser": "^5.0.1",
+        "beagle-lexer": "^4.1.0",
+        "beagle-parser": "^5.0.1",
       },
     },
   },
@@ -889,27 +889,27 @@
 
     "pug": ["pug@workspace:packages/pug"],
 
-    "pug-attrs": ["pug-attrs@workspace:packages/pug-attrs"],
+    "beagle-attrs": ["beagle-attrs@workspace:packages/beagle-attrs"],
 
-    "pug-code-gen": ["pug-code-gen@workspace:packages/pug-code-gen"],
+    "beagle-code-gen": ["beagle-code-gen@workspace:packages/beagle-code-gen"],
 
-    "pug-error": ["pug-error@workspace:packages/pug-error"],
+    "beagle-error": ["beagle-error@workspace:packages/beagle-error"],
 
-    "pug-filters": ["pug-filters@workspace:packages/pug-filters"],
+    "beagle-filters": ["beagle-filters@workspace:packages/beagle-filters"],
 
-    "pug-lexer": ["pug-lexer@workspace:packages/pug-lexer"],
+    "beagle-lexer": ["beagle-lexer@workspace:packages/beagle-lexer"],
 
-    "pug-linker": ["pug-linker@workspace:packages/pug-linker"],
+    "beagle-linker": ["beagle-linker@workspace:packages/beagle-linker"],
 
-    "pug-load": ["pug-load@workspace:packages/pug-load"],
+    "beagle-load": ["beagle-load@workspace:packages/beagle-load"],
 
-    "pug-parser": ["pug-parser@workspace:packages/pug-parser"],
+    "beagle-parser": ["beagle-parser@workspace:packages/beagle-parser"],
 
-    "pug-runtime": ["pug-runtime@workspace:packages/pug-runtime"],
+    "beagle-runtime": ["beagle-runtime@workspace:packages/beagle-runtime"],
 
-    "pug-strip-comments": ["pug-strip-comments@workspace:packages/pug-strip-comments"],
+    "beagle-strip-comments": ["beagle-strip-comments@workspace:packages/beagle-strip-comments"],
 
-    "pug-walk": ["pug-walk@workspace:packages/pug-walk"],
+    "beagle-walk": ["beagle-walk@workspace:packages/beagle-walk"],
 
     "pump": ["pump@3.0.3", "", { "dependencies": { "end-of-stream": "^1.1.0", "once": "^1.3.1" } }, "sha512-todwxLMY7/heScKmntwQG8CXVkWUOdYxIvY2s0VWAAMh/nd8SoYiRaKjlr7+iCs984f2P8zvrfWcDDYVb73NfA=="],
 
@@ -1201,7 +1201,7 @@
 
     "pretty-format/ansi-styles": ["ansi-styles@5.2.0", "", {}, "sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA=="],
 
-    "pug-runtime/uglify-js": ["uglify-js@2.8.29", "", { "dependencies": { "source-map": "~0.5.1", "yargs": "~3.10.0" }, "optionalDependencies": { "uglify-to-browserify": "~1.0.0" }, "bin": { "uglifyjs": "bin/uglifyjs" } }, "sha512-qLq/4y2pjcU3vhlhseXGGJ7VbFO4pBANu0kwl8VCa9KEI0V8VfZIx2Fy3w01iSTA/pGwKZSmu/+I4etLNDdt5w=="],
+    "beagle-runtime/uglify-js": ["uglify-js@2.8.29", "", { "dependencies": { "source-map": "~0.5.1", "yargs": "~3.10.0" }, "optionalDependencies": { "uglify-to-browserify": "~1.0.0" }, "bin": { "uglifyjs": "bin/uglifyjs" } }, "sha512-qLq/4y2pjcU3vhlhseXGGJ7VbFO4pBANu0kwl8VCa9KEI0V8VfZIx2Fy3w01iSTA/pGwKZSmu/+I4etLNDdt5w=="],
 
     "source-map-support/source-map": ["source-map@0.6.1", "", {}, "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="],
 
@@ -1381,7 +1381,7 @@
 
     "pkg-dir/find-up/locate-path": ["locate-path@5.0.0", "", { "dependencies": { "p-locate": "^4.1.0" } }, "sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g=="],
 
-    "pug-runtime/uglify-js/yargs": ["yargs@3.10.0", "", { "dependencies": { "camelcase": "^1.0.2", "cliui": "^2.1.0", "decamelize": "^1.0.0", "window-size": "0.1.0" } }, "sha512-QFzUah88GAGy9lyDKGBqZdkYApt63rCXYBGYnEP4xDJPXNqXXnBDACnbrXnViV6jRSqAePwrATi2i8mfYm4L1A=="],
+    "beagle-runtime/uglify-js/yargs": ["yargs@3.10.0", "", { "dependencies": { "camelcase": "^1.0.2", "cliui": "^2.1.0", "decamelize": "^1.0.0", "window-size": "0.1.0" } }, "sha512-QFzUah88GAGy9lyDKGBqZdkYApt63rCXYBGYnEP4xDJPXNqXXnBDACnbrXnViV6jRSqAePwrATi2i8mfYm4L1A=="],
 
     "string-length/strip-ansi/ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
 
@@ -1521,7 +1521,7 @@
 
     "pkg-dir/find-up/locate-path/p-locate": ["p-locate@4.1.0", "", { "dependencies": { "p-limit": "^2.2.0" } }, "sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A=="],
 
-    "pug-runtime/uglify-js/yargs/cliui": ["cliui@2.1.0", "", { "dependencies": { "center-align": "^0.1.1", "right-align": "^0.1.1", "wordwrap": "0.0.2" } }, "sha512-GIOYRizG+TGoc7Wgc1LiOTLare95R3mzKgoln+Q/lE4ceiYH19gUpl0l0Ffq4lJDEf3FxujMe6IBfOCs7pfqNA=="],
+    "beagle-runtime/uglify-js/yargs/cliui": ["cliui@2.1.0", "", { "dependencies": { "center-align": "^0.1.1", "right-align": "^0.1.1", "wordwrap": "0.0.2" } }, "sha512-GIOYRizG+TGoc7Wgc1LiOTLare95R3mzKgoln+Q/lE4ceiYH19gUpl0l0Ffq4lJDEf3FxujMe6IBfOCs7pfqNA=="],
 
     "wrap-ansi-cjs/ansi-styles/color-convert/color-name": ["color-name@1.1.4", "", {}, "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="],
 

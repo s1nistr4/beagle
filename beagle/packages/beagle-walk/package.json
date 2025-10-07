@@ -1,0 +1,22 @@
+{
+  "name": "beagle-walk",
+  "version": "1.1.8",
+  "description": "Walk and transform a pug AST",
+  "keywords": [
+    "pug",
+    "beagle"
+  ],
+  "devDependencies": {
+    "beagle-lexer": "^4.1.0",
+    "beagle-parser": "^5.0.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pugjs/pug/tree/master/packages/beagle-walk"
+  },
+  "author": "Beagle",
+  "license": "MIT"
+}

@@ -1,5 +1,5 @@
 var assert = require('assert');
-var bin = require.resolve('../bin/pug-lint');
+var bin = require.resolve('../bin/beagle-lint');
 var fs = require('fs');
 var path = require('path');
 var spawn = require('child_process').spawn;

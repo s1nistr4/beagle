@@ -1,0 +1,23 @@
+{
+  "name": "beagle-strip-comments",
+  "version": "1.0.4",
+  "description": "Strip comments from a Beagle token stream (from the lexer)",
+  "keywords": [
+    "pug"
+  ],
+  "dependencies": {
+    "beagle-error": "^1.3.3"
+  },
+  "devDependencies": {
+    "line-json": "^2.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s1nistr4/beagle/tree/master/packages/beagle-strip-comments"
+  },
+  "author": "s1nistr4 <s1nistr4@proton.me>",
+  "license": "MIT"
+}

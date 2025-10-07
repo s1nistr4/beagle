@@ -1,0 +1,26 @@
+{
+  "name": "beagle-load",
+  "version": "2.0.12",
+  "description": "The Beagle loader is responsible for loading the depenendencies of a given Beagle file.",
+  "keywords": [
+    "pug",
+    "beagle"
+  ],
+  "dependencies": {
+    "object-assign": "^4.1.1",
+    "beagle-walk": "^1.1.8"
+  },
+  "devDependencies": {
+    "beagle-lexer": "^4.1.0",
+    "beagle-parser": "^5.0.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pugjs/pug/tree/master/packages/beagle-load"
+  },
+  "author": "s1nistr4",
+  "license": "MIT"
+}
