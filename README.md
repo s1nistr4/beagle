@@ -1,9 +1,9 @@
 # Beagle
-**Beagle is a high-performance, high-productivity templating engine for Node.js.** It can be used both server side and with frontend frameworks like React, Angular, Vue, Svelte and others. It's an actively maintained fork of [Pug](https://github.com/pugjs/pug) with a modernized codebase.
+**Beagle is a high-performance, high-productivity templating engine for Node.js.** It can be used both server side and with frontend frameworks like React, Angular, Vue, Svelte and others. It's an actively maintained fork of [Pug](https://github.com/pugjs/pug) with a modernized codebase with full type-safety, and better compatibility with SPA frameworks like React/Angular/Vue.
 
 ## New Features (WIP)
 - In progress: The codebase has been ported over to TypeScript.
-- In progress: Popular requested features from Beagle are being merged into the codebase
+- In progress: Popular requested features from Beagle are being merged into the codebase. If there's something you'd like, please open an issue.
 - Better support for frontend frameworks without having to use workarounds/hacks to make it work.
 - All of the separate Beagle code repositories are merged into one, which just looks nicer and also means less duplicated code.
 - Fully backwards compatible with Pug. Beagle is a drop-in replacement.
@@ -13,7 +13,7 @@
 ```bash
 # Node.js
 npm install beagle # Main library 
-npm install beagle-cli -g # If you want the Beagle CLI 
+npm install beagle-cli -g # If you want the Beagle CLI
 
 # run the CLI 
 beagle --help
