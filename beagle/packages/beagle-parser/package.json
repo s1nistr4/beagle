@@ -1,6 +1,6 @@
 {
   "name": "beagle-parser",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "The beagle parser (takes an array of tokens and converts it to an abstract syntax tree)",
   "keywords": [
     "pug",

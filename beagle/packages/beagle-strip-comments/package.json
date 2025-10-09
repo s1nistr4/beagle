@@ -1,6 +1,6 @@
 {
   "name": "beagle-strip-comments",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Strip comments from a Beagle token stream (from the lexer)",
   "keywords": [
     "pug"
