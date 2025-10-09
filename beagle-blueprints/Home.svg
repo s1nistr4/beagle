@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="209.86517mm"
+   height="297.37082mm"
+   viewBox="0 0 209.86517 297.37082"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="Home.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4937331"
+     inkscape:cx="368.20501"
+     inkscape:cy="785.6156"
+     inkscape:window-width="1904"
+     inkscape:window-height="1010"
+     inkscape:window-x="5"
+     inkscape:window-y="5"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.9048675,-0.25049812)">
+    <rect
+       style="fill:#e7e8d1;fill-opacity:1;stroke-width:0.542714"
+       id="rect1"
+       width="209.86517"
+       height="297.37082"
+       x="1.9048675"
+       y="0.25049812"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.6887px;line-height:1.3;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke-width:1.70899"
+       x="108.25826"
+       y="43.090252"
+       id="text1"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:1.70899"
+         x="108.25826"
+         y="43.090252"
+         id="tspan2">Beagle makes HTML </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:1.70899"
+         x="108.25826"
+         y="64.099106"
+         id="tspan3">fun to write.</tspan></text>
+    <g
+       id="g11"
+       transform="translate(3.913803,-0.28088865)"
+       style="fill:#ffffff;fill-opacity:1">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#b2b2b2;stroke-width:0.538001;stroke-opacity:1"
+         id="rect5"
+         width="69.15168"
+         height="35.966293"
+         x="30.033707"
+         y="74.450752"
+         ry="3.8932583" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#b2b2b2;stroke-width:0.538001;stroke-opacity:1"
+         id="rect6"
+         width="69.15168"
+         height="35.966293"
+         x="106.60112"
+         y="74.636147"
+         ry="3.8932583" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.98944px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.434575;stroke-opacity:1"
+       x="107.11226"
+       y="135.50836"
+       id="text6"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans';fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.434575"
+         x="107.11226"
+         y="135.50836"
+         id="tspan7">Beagle transforms how you work with HTML. It shortens the amount of code you have to write, </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans';fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.434575"
+         x="107.11226"
+         y="140.69464"
+         id="tspan8">saving you time and having less errors. Beagle is an actively-maintained fork of Pug </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans';fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.434575"
+         x="107.11226"
+         y="145.88091"
+         id="tspan10">that has cleaner code, full type-safety and better support for frontend frameworks.</tspan></text>
+    <g
+       id="g12"
+       transform="matrix(1.1049563,0,0,1.1049563,-10.659681,-12.311289)" />
+    <rect
+       style="fill:#a7beae;fill-opacity:1;stroke:none;stroke-width:0.580432;stroke-opacity:1"
+       id="rect12"
+       width="198.97816"
+       height="16.075754"
+       x="6.5214639"
+       y="4.6296196"
+       ry="8.0378771" />
+    <rect
+       style="fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.156039;stroke-opacity:1"
+       id="rect13"
+       width="25.302786"
+       height="9.1361971"
+       x="175.51366"
+       y="8.0993977"
+       ry="4.5680985" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.47212px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.705016;stroke-opacity:1"
+       x="188.02266"
+       y="14.829185"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';fill:#ffffff;fill-opacity:1;stroke-width:0.705016"
+         x="188.02266"
+         y="14.829185">Docs</tspan></text>
+    <g
+       id="g18"
+       transform="translate(-9.564962,-0.53138678)">
+      <g
+         id="g16"
+         transform="translate(8.3250599)">
+        <g
+           id="g15">
+          <rect
+             style="fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.42773;stroke-opacity:1"
+             id="rect11"
+             width="25.887867"
+             height="10.145175"
+             x="63.376026"
+             y="116.23113"
+             ry="5.0725875"
+             transform="matrix(1.1049563,0,0,1.1049563,-10.659681,-12.311289)" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.97473px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.650835;stroke-opacity:1"
+             x="73.147087"
+             y="123.85788"
+             id="text14"><tspan
+               sodipodi:role="line"
+               id="tspan14"
+               style="stroke-width:0.650834"
+               x="73.147087"
+               y="123.85788">Install</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g17"
+         transform="translate(-6.9080281)">
+        <rect
+           style="fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.647864;stroke-opacity:1"
+           id="rect10"
+           width="59.391403"
+           height="10.145175"
+           x="105.88086"
+           y="116.36823"
+           ry="5.0725875"
+           transform="matrix(1.1049563,0,0,1.1049563,-10.659681,-12.311289)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.97473px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.650835;stroke-opacity:1"
+           x="138.95232"
+           y="123.42894"
+           id="text15"><tspan
+             sodipodi:role="line"
+             id="tspan15"
+             style="stroke-width:0.650834"
+             x="138.95232"
+             y="123.42894">Migrating from Pug</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50171px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.817172;stroke-opacity:1"
+       x="69.8797"
+       y="194.87621"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.81717"
+         x="69.8797"
+         y="194.87621">Say goodbye to closing tags</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50171px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.817172;stroke-opacity:1"
+       x="63.721004"
+       y="252.80943"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.81717"
+         x="64.666222"
+         y="252.80943">Mixins let you re-use code </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50171px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.817172;stroke-opacity:1"
+       x="63.220005"
+       y="270.09381"
+       id="text20"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.81717"
+         x="63.220005"
+         y="270.09381">Easily iterate through data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.67875px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.945389;stroke-opacity:1"
+       x="104.17174"
+       y="159.4837"
+       id="text21"><tspan
+         sodipodi:role="line"
+         id="tspan21"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.945387"
+         x="104.17174"
+         y="159.4837">Supports your favorite frameworks</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.52964px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.929145;stroke-opacity:1"
+       x="26.479189"
+       y="15.110241"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.929144"
+         x="26.479189"
+         y="15.110241">Beagle</tspan></text>
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
+       id="path22"
+       cx="61.065926"
+       cy="173.48259"
+       r="9.3878336" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
+       id="circle22"
+       cx="84.092682"
+       cy="173.48259"
+       r="9.3878336" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
+       id="circle23"
+       cx="105.52529"
+       cy="173.48259"
+       r="9.3878336" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
+       id="circle24"
+       cx="127.13502"
+       cy="173.48259"
+       r="9.3878336" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
+       id="circle25"
+       cx="151.40169"
+       cy="173.48259"
+       r="9.3878336" />
+  </g>
+</svg>

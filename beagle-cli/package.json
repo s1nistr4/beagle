@@ -1,6 +1,6 @@
 {
   "name": "beagle-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Beagle's CLI interface",
   "bin": {
     "pug": "index.js",
@@ -17,8 +17,8 @@
     "@babel/preset-typescript": "^7.27.1",
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
-    "@types/node": "^24.6.2",
-    "@types/beagle": "^2.0.10",
+    "@types/node": "^24.7.0",
+    "@types/pug": "^2.0.10",
     "babel-preset-minify": "^0.5.2",
     "chalk": "^5.6.2",
     "commander": "^14.0.1",
