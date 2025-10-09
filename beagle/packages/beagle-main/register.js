@@ -1,0 +1,1 @@
+"use strict";var pug=require("./"),resolvedPug=JSON.stringify(require.resolve("./"));function compileTemplate(a,b){var c=pug.compileFileClient(b,{inlineRuntimeFunctions:!1});a._compile("var pug = require("+resolvedPug+").runtime;\n\nmodule.exports = "+c+";",b)}require.extensions&&(require.extensions[".pug"]=compileTemplate);

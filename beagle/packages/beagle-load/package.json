@@ -1,6 +1,6 @@
 {
   "name": "beagle-load",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "The Beagle loader is responsible for loading the depenendencies of a given Beagle file.",
   "scripts": {
     "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"

@@ -27,6 +27,9 @@
     "beagle-runtime": "^2.0.5",
     "beagle-strip-comments": "^1.0.4"
   },
+  "scripts": {
+    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  },
   "devDependencies": {
     "jstransformer-cdata": "^1.0.0",
     "jstransformer-coffee-script": "^1.0.0",
