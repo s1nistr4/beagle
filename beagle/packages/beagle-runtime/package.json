@@ -20,7 +20,8 @@
   "scripts": {
     "prepublish": "node prepublish",
     "pretest": "npm run prepublish",
-    "build": "node prepublish"
+    "build": "node prepublish",
+    "build-babel": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
   },
   "repository": {
     "type": "git",

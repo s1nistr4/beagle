@@ -1,10 +1,1 @@
-var runtime = require('./');
-
-module.exports = wrap;
-function wrap(template, templateName) {
-  templateName = templateName || 'template';
-  return Function(
-    'pug',
-    template + '\n' + 'return ' + templateName + ';'
-  )(runtime);
-}
+"use strict";var runtime=require("./");module.exports=wrap;function wrap(a,b){return b=b||"template",Function("pug",a+"\nreturn "+b+";")(runtime)}

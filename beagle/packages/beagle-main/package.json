@@ -17,6 +17,7 @@
   },
   "main": "lib",
   "dependencies": {
+    "@types/pug": "^2.0.10",
     "beagle-code-gen": "^2.0.2",
     "beagle-filters": "^3.1.1",
     "beagle-lexer": "^4.1.0",

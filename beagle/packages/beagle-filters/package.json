@@ -2,6 +2,9 @@
   "name": "beagle-filters",
   "version": "3.1.1",
   "description": "Code for processing filters in beagle templates",
+  "scripts": {
+   "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  },
   "keywords": [
     "pug",
     "beagle"

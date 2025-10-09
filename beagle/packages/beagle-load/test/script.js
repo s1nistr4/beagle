@@ -1,1 +1,1 @@
-document.write('hello world!');
+"use strict";document.write("hello world!");

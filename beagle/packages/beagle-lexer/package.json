@@ -2,6 +2,9 @@
   "name": "beagle-lexer",
   "version": "4.1.0",
   "description": "The beagle lexer (takes a string and converts it to an array of tokens)",
+  "scripts": {
+   "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  },
   "keywords": [
     "pug",
     "beagle"

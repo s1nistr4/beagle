@@ -3,7 +3,7 @@ import path from "path"
 import { Command, OptionValues, program } from "commander"
 import { mkdirp } from "mkdirp"
 import chalk from "chalk"
-import pug from "pug"
+import beagle from "beagle-main"
 
 interface IOptions {
  name?: string|{ (str: string): Command; (): string; }
@@ -208,9 +208,9 @@ function stdin() {
     let output;
 
     if (options.client) {
-      output = pug.compileClient(buf, options);
+      output = beagle.compileClient(buf, options);
     } else {
-      let fn = pug.compile(buf, options);
+      let fn = beagle.compile(buf, options);
       let output = fn(options);
     }
     process.stdout.write(output);
@@ -231,8 +231,8 @@ function renderFile(path:string, rootPath:string) {
       options.name = getNameFromFileName(path);
     }
     let fn = options.client
-           ? pug.compileFileClient(path, options)
-           : pug.compileFile(path, options);
+           ? beagle.compileFileClient(path, options)
+           : beagle.compileFile(path, options);
     if (program.watch && fn.dependencies) {
       // watch dependencies, and recompile the base
       fn.dependencies.forEach(function (dep) {

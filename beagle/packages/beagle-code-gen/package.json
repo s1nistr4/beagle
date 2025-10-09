@@ -2,6 +2,9 @@
   "name": "beagle-code-gen",
   "version": "2.0.2",
   "description": "Default code-generator for beagle. It generates HTML via a JavaScript template function.",
+  "scripts": {
+   "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  },
   "keywords": [
     "pug",
     "beagle"

@@ -1,9 +1,1 @@
-var assert = require('assert');
-
-module.exports = {
-  custom: function(str, options) {
-    expect(options.opt).toBe('val');
-    expect(options.num).toBe(2);
-    return 'BEGIN' + str + 'END';
-  },
-};
+"use strict";var assert=require("assert");module.exports={custom:function(a,b){return expect(b.opt).toBe("val"),expect(b.num).toBe(2),"BEGIN"+a+"END"}};

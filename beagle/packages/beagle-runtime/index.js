@@ -1,8 +1,4 @@
-'use strict';
-
-var pug_has_own_property = Object.prototype.hasOwnProperty;
-
-/**
+"use strict";var pug_has_own_property=Object.prototype.hasOwnProperty;/**
  * Merge two attribute objects giving precedence
  * to values in object `b`. Classes are special-cased
  * allowing for arrays and merging/joining appropriately
@@ -12,37 +8,7 @@ var pug_has_own_property = Object.prototype.hasOwnProperty;
  * @param {Object} b
  * @return {Object} a
  * @api private
- */
-
-exports.merge = pug_merge;
-function pug_merge(a, b) {
-  if (arguments.length === 1) {
-    var attrs = a[0];
-    for (var i = 1; i < a.length; i++) {
-      attrs = pug_merge(attrs, a[i]);
-    }
-    return attrs;
-  }
-
-  for (var key in b) {
-    if (key === 'class') {
-      var valA = a[key] || [];
-      a[key] = (Array.isArray(valA) ? valA : [valA]).concat(b[key] || []);
-    } else if (key === 'style') {
-      var valA = pug_style(a[key]);
-      valA = valA && valA[valA.length - 1] !== ';' ? valA + ';' : valA;
-      var valB = pug_style(b[key]);
-      valB = valB && valB[valB.length - 1] !== ';' ? valB + ';' : valB;
-      a[key] = valA + valB;
-    } else {
-      a[key] = b[key];
-    }
-  }
-
-  return a;
-}
-
-/**
+ */exports.merge=pug_merge;function pug_merge(c,a){if(1===arguments.length){for(var b=c[0],d=1;d<c.length;d++)b=pug_merge(b,c[d]);return b}for(var e in a)if("class"==e){var f=c[e]||[];c[e]=(Array.isArray(f)?f:[f]).concat(a[e]||[])}else if("style"===e){var f=pug_style(c[e]);f=f&&";"!==f[f.length-1]?f+";":f;var g=pug_style(a[e]);g=g&&";"!==g[g.length-1]?g+";":g,c[e]=f+g}else c[e]=a[e];return c}/**
  * Process array, object, or string as a string of classes delimited by a space.
  *
  * If `val` is an array, all members of it and its subarrays are counted as
@@ -58,68 +24,12 @@ function pug_merge(a, b) {
  * @param {(Array.<string>|Object.<string, boolean>|string)} val
  * @param {?Array.<string>} escaping
  * @return {String}
- */
-exports.classes = pug_classes;
-function pug_classes_array(val, escaping) {
-  var classString = '',
-    className,
-    padding = '',
-    escapeEnabled = Array.isArray(escaping);
-  for (var i = 0; i < val.length; i++) {
-    className = pug_classes(val[i]);
-    if (!className) continue;
-    escapeEnabled && escaping[i] && (className = pug_escape(className));
-    classString = classString + padding + className;
-    padding = ' ';
-  }
-  return classString;
-}
-function pug_classes_object(val) {
-  var classString = '',
-    padding = '';
-  for (var key in val) {
-    if (key && val[key] && pug_has_own_property.call(val, key)) {
-      classString = classString + padding + key;
-      padding = ' ';
-    }
-  }
-  return classString;
-}
-function pug_classes(val, escaping) {
-  if (Array.isArray(val)) {
-    return pug_classes_array(val, escaping);
-  } else if (val && typeof val === 'object') {
-    return pug_classes_object(val);
-  } else {
-    return val || '';
-  }
-}
-
-/**
+ */exports.classes=pug_classes;function pug_classes_array(a,b){for(var c,d="",e="",f=Array.isArray(b),g=0;g<a.length;g++)c=pug_classes(a[g]),c&&(f&&b[g]&&(c=pug_escape(c)),d=d+e+c,e=" ");return d}function pug_classes_object(a){var b="",c="";for(var d in a)d&&a[d]&&pug_has_own_property.call(a,d)&&(b=b+c+d,c=" ");return b}function pug_classes(a,b){return Array.isArray(a)?pug_classes_array(a,b):a&&"object"==typeof a?pug_classes_object(a):a||""}/**
  * Convert object or string to a string of CSS styles delimited by a semicolon.
  *
  * @param {(Object.<string, string>|string)} val
  * @return {String}
- */
-
-exports.style = pug_style;
-function pug_style(val) {
-  if (!val) return '';
-  if (typeof val === 'object') {
-    var out = '';
-    for (var style in val) {
-      /* istanbul ignore else */
-      if (pug_has_own_property.call(val, style)) {
-        out = out + style + ':' + val[style] + ';';
-      }
-    }
-    return out;
-  } else {
-    return val + '';
-  }
-}
-
-/**
+ */exports.style=pug_style;function pug_style(a){if(!a)return"";if("object"==typeof a){var b="";for(var c in a)/* istanbul ignore else */pug_has_own_property.call(a,c)&&(b=b+c+":"+a[c]+";");return b}return a+""}/**
  * Render the given attribute.
  *
  * @param {String} key
@@ -127,109 +37,19 @@ function pug_style(val) {
  * @param {Boolean} escaped
  * @param {Boolean} terse
  * @return {String}
- */
-exports.attr = pug_attr;
-function pug_attr(key, val, escaped, terse) {
-  if (
-    val === false ||
-    val == null ||
-    (!val && (key === 'class' || key === 'style'))
-  ) {
-    return '';
-  }
-  if (val === true) {
-    return ' ' + (terse ? key : key + '="' + key + '"');
-  }
-  var type = typeof val;
-  if (
-    (type === 'object' || type === 'function') &&
-    typeof val.toJSON === 'function'
-  ) {
-    val = val.toJSON();
-  }
-  if (typeof val !== 'string') {
-    val = JSON.stringify(val);
-    if (!escaped && val.indexOf('"') !== -1) {
-      return ' ' + key + "='" + val.replace(/'/g, '&#39;') + "'";
-    }
-  }
-  if (escaped) val = pug_escape(val);
-  return ' ' + key + '="' + val + '"';
-}
-
-/**
+ */exports.attr=pug_attr;function pug_attr(a,b,c,d){if(!1===b||null==b||!b&&("class"===a||"style"===a))return"";if(!0===b)return" "+(d?a:a+"=\""+a+"\"");var e=typeof b;return(("object"==e||"function"===e)&&"function"==typeof b.toJSON&&(b=b.toJSON()),"string"!=typeof b&&(b=JSON.stringify(b),!c&&-1!==b.indexOf("\"")))?" "+a+"='"+b.replace(/'/g,"&#39;")+"'":(c&&(b=pug_escape(b))," "+a+"=\""+b+"\"")}/**
  * Render the given attributes object.
  *
  * @param {Object} obj
  * @param {Object} terse whether to use HTML5 terse boolean attributes
  * @return {String}
- */
-exports.attrs = pug_attrs;
-function pug_attrs(obj, terse) {
-  var attrs = '';
-
-  for (var key in obj) {
-    if (pug_has_own_property.call(obj, key)) {
-      var val = obj[key];
-
-      if ('class' === key) {
-        val = pug_classes(val);
-        attrs = pug_attr(key, val, false, terse) + attrs;
-        continue;
-      }
-      if ('style' === key) {
-        val = pug_style(val);
-      }
-      attrs += pug_attr(key, val, false, terse);
-    }
-  }
-
-  return attrs;
-}
-
-/**
+ */exports.attrs=pug_attrs;function pug_attrs(a,b){var c="";for(var d in a)if(pug_has_own_property.call(a,d)){var e=a[d];if("class"===d){e=pug_classes(e),c=pug_attr(d,e,!1,b)+c;continue}"style"===d&&(e=pug_style(e)),c+=pug_attr(d,e,!1,b)}return c}/**
  * Escape the given string of `html`.
  *
  * @param {String} html
  * @return {String}
  * @api private
- */
-
-var pug_match_html = /["&<>]/;
-exports.escape = pug_escape;
-function pug_escape(_html) {
-  var html = '' + _html;
-  var regexResult = pug_match_html.exec(html);
-  if (!regexResult) return _html;
-
-  var result = '';
-  var i, lastIndex, escape;
-  for (i = regexResult.index, lastIndex = 0; i < html.length; i++) {
-    switch (html.charCodeAt(i)) {
-      case 34:
-        escape = '&quot;';
-        break;
-      case 38:
-        escape = '&amp;';
-        break;
-      case 60:
-        escape = '&lt;';
-        break;
-      case 62:
-        escape = '&gt;';
-        break;
-      default:
-        continue;
-    }
-    if (lastIndex !== i) result += html.substring(lastIndex, i);
-    lastIndex = i + 1;
-    result += escape;
-  }
-  if (lastIndex !== i) return result + html.substring(lastIndex, i);
-  else return result;
-}
-
-/**
+ */var pug_match_html=/["&<>]/;exports.escape=pug_escape;function pug_escape(a){var b=""+a,c=pug_match_html.exec(b);if(!c)return a;var d,e,f,g="";for(d=c.index,e=0;d<b.length;d++){switch(b.charCodeAt(d)){case 34:f="&quot;";break;case 38:f="&amp;";break;case 60:f="&lt;";break;case 62:f="&gt;";break;default:continue}e!==d&&(g+=b.substring(e,d)),e=d+1,g+=f}return e===d?g:g+b.substring(e,d)}/**
  * Re-throw the given `err` in context to the
  * the pug in `filename` at the given `lineno`.
  *
@@ -238,49 +58,5 @@ function pug_escape(_html) {
  * @param {String} lineno
  * @param {String} str original source
  * @api private
- */
-
-exports.rethrow = pug_rethrow;
-function pug_rethrow(err, filename, lineno, str) {
-  if (!(err instanceof Error)) throw err;
-  if ((typeof window != 'undefined' || !filename) && !str) {
-    err.message += ' on line ' + lineno;
-    throw err;
-  }
-  var context, lines, start, end;
-  try {
-    str = str || require('fs').readFileSync(filename, {encoding: 'utf8'});
-    context = 3;
-    lines = str.split('\n');
-    start = Math.max(lineno - context, 0);
-    end = Math.min(lines.length, lineno + context);
-  } catch (ex) {
-    err.message +=
-      ' - could not read from ' + filename + ' (' + ex.message + ')';
-    pug_rethrow(err, null, lineno);
-    return;
-  }
-
-  // Error context
-  context = lines
-    .slice(start, end)
-    .map(function(line, i) {
-      var curr = i + start + 1;
-      return (curr == lineno ? '  > ' : '    ') + curr + '| ' + line;
-    })
-    .join('\n');
-
-  // Alter exception message
-  err.path = filename;
-  try {
-    err.message =
-      (filename || 'Pug') +
-      ':' +
-      lineno +
-      '\n' +
-      context +
-      '\n\n' +
-      err.message;
-  } catch (e) {}
-  throw err;
-}
+ */exports.rethrow=pug_rethrow;function pug_rethrow(a,b,c,d){if(!(a instanceof Error))throw a;if(("undefined"!=typeof window||!b)&&!d)throw a.message+=" on line "+c,a;var e,f,g,h;try{d=d||require("fs").readFileSync(b,{encoding:"utf8"}),e=3,f=d.split("\n"),g=Math.max(c-e,0),h=Math.min(f.length,c+e)}catch(d){return a.message+=" - could not read from "+b+" ("+d.message+")",void pug_rethrow(a,null,c)}// Error context
+e=f.slice(g,h).map(function(a,b){var d=b+g+1;return(d==c?"  > ":"    ")+d+"| "+a}).join("\n"),a.path=b;try{a.message=(b||"Pug")+":"+c+"\n"+e+"\n\n"+a.message}catch(a){}throw a}

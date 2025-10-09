@@ -2,6 +2,9 @@
   "name": "beagle-linker",
   "version": "3.0.6",
   "description": "Link multiple s1nistr4 ASTs together using include/extends",
+  "scripts": {
+    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  },
   "keywords": [
     "pug",
     "beagle"

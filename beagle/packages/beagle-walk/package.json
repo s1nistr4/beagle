@@ -18,5 +18,8 @@
     "url": "https://github.com/pugjs/pug/tree/master/packages/beagle-walk"
   },
   "author": "Beagle",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  }
 }

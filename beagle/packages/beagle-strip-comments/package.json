@@ -19,5 +19,8 @@
     "url": "https://github.com/s1nistr4/beagle/tree/master/packages/beagle-strip-comments"
   },
   "author": "s1nistr4 <s1nistr4@proton.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
+  }
 }
