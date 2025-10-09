@@ -1,1 +1,0 @@
-"use strict";var runtime=require("./");module.exports=wrap;function wrap(a,b){return b=b||"template",Function("pug",a+"\nreturn "+b+";")(runtime)}

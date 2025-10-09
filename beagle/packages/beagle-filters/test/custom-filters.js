@@ -1,1 +1,0 @@
-"use strict";var assert=require("assert");module.exports={custom:function(a,b){return expect(b.opt).toBe("val"),expect(b.num).toBe(2),"BEGIN"+a+"END"}};

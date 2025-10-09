@@ -1,3 +1,0 @@
-"use strict";var jstransformer=require("jstransformer"),resolve=require("resolve");module.exports=filter;function getMinifyTransformerName(a){return"js"===a?"uglify-js":"css"===a?"clean-css":void 0}function filter(a,b,c,d,e){e=e||"render";var f;try{try{f=resolve.sync("jstransformer-"+a,{basedir:d||process.cwd()})}catch(b){f=require.resolve("jstransformer-"+a)}}catch(b){var g=new Error("unknown filter \":"+a+"\"");throw g.code="UNKNOWN_FILTER",g}var h=jstransformer(require(f)),i=h[e](b,c,c).body;// TODO: we may want to add a way for people to separately specify "locals"
-if(c&&c.minify){var j=getMinifyTransformerName(h.outputFormat);if(j)try{i=filter(j,i,null,d)}catch(a){// better to fail to minify than output nothing
-}}return i}
