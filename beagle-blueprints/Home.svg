@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4937331"
-     inkscape:cx="368.20501"
-     inkscape:cy="785.6156"
+     inkscape:zoom="1.4124917"
+     inkscape:cx="383.3651"
+     inkscape:cy="156.10712"
      inkscape:window-width="1904"
      inkscape:window-height="1010"
      inkscape:window-x="5"
@@ -40,10 +40,10 @@
      id="layer1"
      transform="translate(-1.9048675,-0.25049812)">
     <rect
-       style="fill:#e7e8d1;fill-opacity:1;stroke-width:0.542714"
+       style="fill:#e7e8d1;fill-opacity:1;stroke-width:0.688114"
        id="rect1"
        width="209.86517"
-       height="297.37082"
+       height="478.05423"
        x="1.9048675"
        y="0.25049812"
        ry="0" />
@@ -140,7 +140,7 @@
        transform="translate(-9.564962,-0.53138678)">
       <g
          id="g16"
-         transform="translate(8.3250599)">
+         transform="translate(11.500061,0.44640431)">
         <g
            id="g15">
           <rect
@@ -169,25 +169,24 @@
          id="g17"
          transform="translate(-6.9080281)">
         <rect
-           style="fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.647864;stroke-opacity:1"
+           style="fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.715861;stroke-opacity:1"
            id="rect10"
-           width="59.391403"
-           height="10.145175"
-           x="105.88086"
-           y="116.36823"
-           ry="5.0725875"
-           transform="matrix(1.1049563,0,0,1.1049563,-10.659681,-12.311289)" />
+           width="65.624908"
+           height="11.209975"
+           x="109.11218"
+           y="116.56544"
+           ry="5.6049876" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.97473px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.650835;stroke-opacity:1"
-           x="138.95232"
-           y="123.42894"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.34992px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Medium';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.582773;stroke-opacity:1"
+           x="141.75076"
+           y="123.5614"
            id="text15"><tspan
              sodipodi:role="line"
              id="tspan15"
-             style="stroke-width:0.650834"
-             x="138.95232"
-             y="123.42894">Migrating from Pug</tspan></text>
+             style="stroke-width:0.582772"
+             x="141.75076"
+             y="123.5614">Migrating from Pug</tspan></text>
       </g>
     </g>
     <text
@@ -204,25 +203,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50171px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.817172;stroke-opacity:1"
-       x="63.721004"
-       y="252.80943"
+       x="132.64038"
+       y="245.69276"
        id="text19"><tspan
          sodipodi:role="line"
          id="tspan19"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.81717"
-         x="64.666222"
-         y="252.80943">Mixins let you re-use code </tspan></text>
+         x="133.5856"
+         y="245.69276">Mixins let you re-use code </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.50171px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.817172;stroke-opacity:1"
-       x="63.220005"
-       y="270.09381"
+       x="68.010277"
+       y="312.82999"
        id="text20"><tspan
          sodipodi:role="line"
          id="tspan20"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';fill:#b85042;fill-opacity:1;stroke-width:0.81717"
-         x="63.220005"
-         y="270.09381">Easily iterate through data</tspan></text>
+         x="68.010277"
+         y="312.82999">Easily iterate through data</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.67875px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b85042;fill-opacity:1;stroke:none;stroke-width:0.945389;stroke-opacity:1"
@@ -237,14 +236,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.52964px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.929145;stroke-opacity:1"
-       x="26.479189"
-       y="15.110241"
+       x="34.722603"
+       y="14.977283"
        id="text22"><tspan
          sodipodi:role="line"
          id="tspan22"
          style="fill:#ffffff;fill-opacity:1;stroke-width:0.929144"
-         x="26.479189"
-         y="15.110241">Beagle</tspan></text>
+         x="34.722603"
+         y="14.977283">Beagle</tspan></text>
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.538001;stroke-opacity:1"
        id="path22"
@@ -275,5 +274,13 @@
        cx="151.40169"
        cy="173.48259"
        r="9.3878336" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.538001"
+       id="rect2"
+       width="9.5729971"
+       height="9.5729971"
+       x="10.015324"
+       y="8.0242558"
+       ry="4.7864985" />
   </g>
 </svg>

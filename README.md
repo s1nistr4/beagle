@@ -12,7 +12,7 @@
 
 ```bash
 # Node.js
-npm install beagle # Main library 
+npm install beagle-main # Main library
 npm install beagle-cli -g # If you want the Beagle CLI
 
 # run the CLI 
