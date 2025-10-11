@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210.23692mm"
-   height="370.85779mm"
-   viewBox="0 0 210.23692 370.85779"
+   width="209.81065mm"
+   height="15.314406mm"
+   viewBox="0 0 209.81065 15.314406"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.1833053"
-     inkscape:cx="460.99682"
-     inkscape:cy="336.76853"
-     inkscape:window-width="1904"
-     inkscape:window-height="1010"
-     inkscape:window-x="5"
-     inkscape:window-y="5"
+     inkscape:zoom="0.80659048"
+     inkscape:cx="758.74935"
+     inkscape:cy="-538.68724"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -38,7 +38,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2.2059104,-0.25049812)">
+     transform="translate(2.1591015,-355.76947)">
     <rect
        style="fill:#e7e8d1;fill-opacity:1;stroke-width:0.606073"
        id="rect1"
@@ -381,12 +381,23 @@
        y="257.33453"
        ry="0.95033145" />
     <rect
-       style="fill:#a7beae;fill-opacity:1;stroke:none;stroke-width:0.23753;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#a7beae;fill-opacity:1;stroke:none;stroke-width:0.238264;stroke-dasharray:none;stroke-opacity:1"
        id="rect33"
-       width="209.95743"
-       height="15.209569"
-       x="-1.9264143"
+       width="209.81065"
+       height="15.314406"
+       x="-2.1591015"
        y="355.76947"
-       ry="0.21102966" />
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.22258px;line-height:1.3;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:0.517086"
+       x="2.8177156"
+       y="364.44678"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alan Sans';-inkscape-font-specification:'Alan Sans Light';fill:#f9f9f9;stroke-width:0.517084"
+         x="2.8177156"
+         y="364.44678">Beagle - 2025</tspan></text>
   </g>
 </svg>

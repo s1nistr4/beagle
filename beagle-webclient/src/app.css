@@ -1,14 +1,28 @@
 @import 'tailwindcss';
 
 @font-face {
- src: url("/inter.ttf");
- font-family: "inter";
+ src: url("/alan.ttf");
+ font-family: "alan";
 }
 
-* { font-family: inter; color: white; }
-
-.inter { font-family: inter; }
-
-body {
- background-color: #101010;
+@font-face {
+ src: url("/ubuntumono.ttf");
+ font-family: "ubuntumono";
 }
+
+* { font-family: "alan"; color: white; }
+
+.alan { font-family: "alan"; }
+.ubuntumono { font-family: "ubuntumono"; }
+
+.bg1 { background-color: #e7e8d1;  }
+.bg2 { background-color: #a7beae; }
+.bg3 { background-color: #b85042; }
+
+.fg1 { color: #e7e8d1;  }
+.fg2 { color: #a7beae; }
+.fg3 { color: #b85042; }
+
+body { background-color: #e7e8d1; } 
+
+

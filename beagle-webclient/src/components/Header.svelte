@@ -5,10 +5,14 @@
  }
 </script>
 
-<header class="flex m-5 justify-between items-center">
- <div class="cursor-pointer">
-  <p class="text-amber-50 font-bold text-[24px] right-full">Beagle</p>
- </div>
+<header class="py-5 px-3">
+ <div class="content bg2 rounded-full flex justify-between p-5">
+  <div class="left flex justify-between align-center">
+   <img src="" alt="" class="w-10 h-10">
+   <p class="text-[24px] font-bold ml-2">Beagle</p>
+  </div>
 
- <button {onclick} class="bg-indigo-400 px-3 py-2 text-white text-bold rounded-full border-2 border-dotted border-indigo-600 cursor-pointer hover:bg-indigo-500 duration-150 transition-colors">Docs</button>
+  <button onclick={() => {}} class="bg3 px-3 text-[20px] font-bold rounded-full">Docs</button>
+ </div>
 </header>
+
