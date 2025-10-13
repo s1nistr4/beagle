@@ -1,6 +1,6 @@
 {
   "name": "beagle-code-gen",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Default code-generator for beagle. It generates HTML via a JavaScript template function.",
   "scripts": {
    "build": "babel src --out-dir ./ --extensions \".ts\" --copy-files"
@@ -14,7 +14,7 @@
     "doctypes": "^1.1.0",
     "js-stringify": "^1.0.2",
     "beagle-attrs": "^2.0.4",
-    "beagle-error": "^1.3.3",
+    "beagle-error": "^1.3.4",
     "beagle-runtime": "^2.0.5",
     "void-elements": "^3.1.0",
     "with": "^7.0.0"

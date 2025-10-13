@@ -1,6 +1,6 @@
 {
   "name": "beagle-attrs",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Generate code for Beagle attributes",
   "keywords": [
     "pug",
